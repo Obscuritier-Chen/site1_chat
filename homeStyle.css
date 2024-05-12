@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+}
+.container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top
+{
+    flex: 0 1 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 1px 50px 1px;
+    padding: 10px 20px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 0 0 5px lightgray;
+    max-height: 30px;
+}
+.logo
+{
+    align-self: center;
+    font-size: 1.3rem;
+}
+.navigation
+{
+    align-self: center;
+    margin-left: 20px;
+}
+.navigation_ul
+{
+    margin: 0;
+    list-style-type: none;
+}
+.navigation_li
+{
+    display: inline-block;
+    padding: 0 4px;
+    margin: 0 7px;
+    border-radius: 4px;
+}
+.navigation_li:hover
+{
+    background-color: rgb(152, 210, 236);
+    color: rgb(19, 151, 228);
+}
+.userInfo
+{
+    margin-left: auto;/*margin left会尽可能占据剩余空间*/
+    display: flex;
+}
+.avatar
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;/*变为圆形*/
+    overflow: hidden;
+    align-self: center;
+    display: flex;
+}
+.username
+{
+    align-self: center;
+    margin-left: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.delimiter
+{
+    margin-left: 5px;
+    content: '|';
+    font-size: 1.1rem;
+}
+.logout
+{
+    padding: 3px;
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+.logout:hover
+{
+    background-color: rgb(177, 177, 177);
+}
+.content
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px 0 200px;
+}
+.worldContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+.worldTop
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.worldTitle
+{
+    font-size: 1.8rem;
+}
+.enterWorldContainer
+{
+    margin-left: auto;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+.enterWorldButton
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.enterWorldButton:hover
+{
+    box-shadow: 0 0 2px 2px rgb(190, 190, 190);
+}
+.enterWorldButton:active
+{
+    background-color: rgb(168, 168, 168);
+}
+.worldContent
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    height: 250px;
+    font-size: 0.9rem;
+}
+.chat
+{
+    display: flex;
+    flex-direction: row;
+    width: 921px;
+}
+.chatUsername
+{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.chatContent
+{
+    flex: 1;
+    word-wrap: break-word;
+    width: 0px;/*我也不知道为什么这样就好了*/
+}
