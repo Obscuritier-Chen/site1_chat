@@ -58,10 +58,21 @@ body
 {
     width: 25px;
     height: 25px;
-    border-radius: 50%;/*变为圆形*/
+    border: 1px solid black;
+    /*border-radius: 50%;变为圆形*/
     overflow: hidden;
     align-self: center;
     display: flex;
+    flex-direction: column;
+}
+.userPanel
+{/*居中没救了，手动margin吧*/
+    position: absolute;
+    top: 39px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgb(211, 211, 211);
+    background-color: white;
 }
 .username
 {

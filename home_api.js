@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',()=>{
+/*window.addEventListener('DOMContentLoaded',()=>{
     fetch('/check_login_status/',{
         method: 'POST',
     })
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         console.error(error);
     });
 });
-document.getElementsByClassName('logout')[0].addEventListener('click',(event)=>{
+document.getElementsByClassName('logout')[0].addEventListener('click',()=>{
     localStorage.removeItem('token');
 
     fetch('/user_logout/', {
@@ -41,4 +41,25 @@ document.getElementsByClassName('logout')[0].addEventListener('click',(event)=>{
     .catch(error=>{
         console.error(error);
     });
+});*/
+let userPanelCondition=false;
+let timeoutId;
+document.querySelector('.avatar, .userPanel').addEventListener('mouseover',()=>{
+    clearTimeout(timeoutId);//删除原延迟操作
+    if(userPanelCondition)
+        return;
+    const userPanel=document.createElement('div');
+    userPanel.className='userPanel';
+    document.getElementsByClassName('avatar')[0].appendChild(userPanel);
+
+    const username=document.createElement('div');
+    username.className='userPanelName';
+    username.innerText='username';
+    userPanelCondition=true;
+});
+document.querySelector('.avatar, .userPanel').addEventListener('mouseleave',(event)=>{
+    timeoutId=setTimeout(()=>{
+        if(!document.querySelector('.avatar, .userPanel').contains(event.relatedTarget) && event.relatedTarget!=document.getElementsByClassName('userPanel')[0])//mdn搜索relatedPanel
+            document.getElementsByClassName('userPanel')[0].remove(), userPanelCondition=false;
+    },'100');
 });

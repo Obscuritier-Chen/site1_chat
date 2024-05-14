@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>home</title>
-    {% load static %}<!---->
-    <!--<link rel="stylesheet" type="text/css" href="../static/homeStyle.css">-->
-    <link rel="stylesheet" type="text/css" href="{% static 'homeStyle.css' %}">
+    <!--{% load static %}-->
+    <link rel="stylesheet" type="text/css" href="./homeStyle.css">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'homeStyle.css' %}">-->
 </head>
 <body>
     <div class="container">
@@ -20,7 +20,7 @@
             </nav>
             <div class="userInfo">
                 <div class="avatar">
-                    <img src="{% static 'avatar.png' %}">
+                    <!--<img src="{% static 'avatar.png' %}">-->
                 </div>
                 <div class="username"></div>
             </div>
@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <script src="{% static 'home_api.js' %}"></script>
-    <!--<script src="../static/home_api.js"></script>-->
+    <!--<script src="{% static 'home_api.js' %}"></script>-->
+    <script src="./home_api.js"></script>
 </body>
 </html>
