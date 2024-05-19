@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    {% load static %}<!---->
+    <!--<link rel="stylesheet" type="text/css" href="../static/homeStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="logo">Chat</div>
+            <nav class="navigation">
+                <ul class="navigation_ul">
+                    <li class="navigation_li"><a>test1</a></li>
+                    <li class="navigation_li"><a>test2</a></li>
+                    <li class="navigation_li"><a>test3</a></li>
+                </ul>
+            </nav>
+            <div class="userInfo">
+                <div class="avatarContainer">
+                    <div class="avatar">
+                    </div>
+                </div>
+                <div class="username"></div>
+            </div>
+            <div class="delimiter">|</div>
+            <div class="logout">退出登录</div>
+        </div>
+        <div class="content"></div>
+    </div>
+    <script src="{% static 'user_api.js' %}"></script>
+    <!--<script src="../static/home_api.js"></script>-->
+</body>
+</html>
