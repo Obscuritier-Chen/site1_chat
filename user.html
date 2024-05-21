@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>home</title>
-    {% load static %}<!---->
-    <!--<link rel="stylesheet" type="text/css" href="../static/homeStyle.css">-->
-    <link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">
+    <!--{% load static %}-->
+    <link rel="stylesheet" type="text/css" href="./userStyle.css">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">-->
 </head>
 <body>
     <div class="container">
@@ -28,9 +28,28 @@
             <div class="delimiter">|</div>
             <div class="logout">退出登录</div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="userTop">
+                <div class="topImageContainer">
+                    <img class="topImage" src="./image.jpg">
+                </div>
+                <div class="userBasicInfo">
+                    <div class="topAvatar"></div>
+                    <div class="topUserText">
+                        <div class="topUsername">测试</div>
+                        <div class="topSignature">这个人很懒，什么都没有写</div>
+                    </div>
+                </div>
+                <div class="topRightContainer">
+                    <div class="topFunctionalZone">
+                        <input type="button" class="follow" value="关注">
+                        <input type="button" class="message" value="发消息">
+                    </div>                    
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="{% static 'user_api.js' %}"></script>
-    <!--<script src="../static/home_api.js"></script>-->
+    <!--<script src="{% static 'user_api.js' %}"></script>-->
+    <script src="./user_api.js"></script>
 </body>
 </html>
