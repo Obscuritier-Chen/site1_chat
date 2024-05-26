@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>home</title>
-    <!--{% load static %}-->
-    <link rel="stylesheet" type="text/css" href="./userStyle.css">
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">-->
+    <title></title>
+    {% load static %}<!---->
+    <!--<link rel="stylesheet" type="text/css" href="./userStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'frameStyle.css' %}">
 </head>
 <body>
     <div class="container">
@@ -31,12 +32,12 @@
         <div class="content">
             <div class="userTop">
                 <div class="topImageContainer">
-                    <img class="topImage" src="./image.jpg">
+                    <img class="topImage" src="{% static 'image.png' %}">
                 </div>
                 <div class="userBasicInfo">
                     <div class="topAvatar"></div>
                     <div class="topUserText">
-                        <div class="topUsername">测试</div>
+                        <div class="topUsername"></div>
                         <div class="topSignature">这个人很懒，什么都没有写</div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@
                 </div>
                 <div class="userPage">
                 </div>
-                <div class="rightContainer">
+                <!--<div class="rightContainer">
                     <div class="userDataContainer">
                         <div class="userIdentityContainer">
                             <div class="userIdentityTitle">用户状态:</div>
@@ -79,11 +80,11 @@
                             <div class="postNum">1</div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
-    <!--<script src="{% static 'user_api.js' %}"></script>-->
-    <script src="./user_api.js"></script>
+    <script src="{% static 'user_api.js' %}"></script>
+    <!--<script src="./user_api.js"></script>-->
 </body>
 </html>
