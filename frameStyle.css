@@ -27,6 +27,10 @@ body
     align-self: center;
     font-size: 1.3rem;
 }
+.logo:hover
+{
+    cursor: pointer;
+}
 .navigation
 {
     align-self: center;
@@ -67,6 +71,10 @@ body
     align-self: center;
     display: flex;
     flex-direction: column;
+}
+.avatar:hover
+{
+    cursor: pointer;
 }
 .userPanel
 {
@@ -139,4 +147,8 @@ body
     display: flex;
     flex-direction: column;
     margin: 0 23% 0 23%;/*不能再缩小 否则world的聊天内容会出格 原因未知*/
+}
+.hidden
+{
+    display: none !important;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     {% load static %}<!---->
+    <!--<link rel="stylesheet" type="text/css" href="./frameStyle.css">-->
     <!--<link rel="stylesheet" type="text/css" href="./userStyle.css">-->
     <link rel="stylesheet" type="text/css" href="{% static 'userStyle.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'frameStyle.css' %}">
@@ -32,13 +33,13 @@
         <div class="content">
             <div class="userTop">
                 <div class="topImageContainer">
-                    <img class="topImage" src="{% static 'image.png' %}">
+                    <img class="topImage" src="{% static 'image.png' %}"><!---->
                 </div>
                 <div class="userBasicInfo">
                     <div class="topAvatar"></div>
                     <div class="topUserText">
                         <div class="topUsername"></div>
-                        <div class="topSignature">这个人很懒，什么都没有写</div>
+                        <div class="topSignatureContainer"><div class="topSignature">这个人很懒，什么都没有写</div></div>
                     </div>
                 </div>
                 <div class="topRightContainer">
@@ -64,6 +65,7 @@
                     </div>                
                 </div>
                 <div class="userPage">
+
                 </div>
                 <!--<div class="rightContainer">
                     <div class="userDataContainer">
@@ -84,6 +86,7 @@
             </div>
         </div>
     </div>
+    <script src="{% static 'frame_logic.js' %}"></script>
     <script src="{% static 'user_api.js' %}"></script>
     <!--<script src="./user_api.js"></script>-->
 </body>
