@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    {% load static %}<!---->
+    <!--<link rel="stylesheet" type="text/css" href="../static/homeStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'frameStyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog_publish_style.css' %}">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/vditor/3.10.4/index.min.css">
+    <script src="{% static 'login_check.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="logo">Chat</div>
+            <nav class="navigation">
+                <ul class="navigation_ul">
+                    <li class="navigation_li"><a>test1</a></li>
+                    <li class="navigation_li"><a>test2</a></li>
+                    <li class="navigation_li"><a>test3</a></li>
+                </ul>
+            </nav>
+            <div class="userInfo">
+                <div class="avatarContainer">
+                    <div class="avatar">
+                    <img src="{% static 'avatar.png' %}">
+                    </div>
+                </div>
+                <div class="username"></div>
+            </div>
+            <div class="delimiter">|</div>
+            <div class="logout">退出登录</div>
+        </div>
+        <div class="content">
+            <div class="blogPublishContainer">
+                <div class="blogTitleContainer">
+                    <input class="blogTitle" placeholder="博客标题">
+                </div>
+                <div id="vditor" class="vditor"></div>
+                <div class="blogButtonContainer">
+                    <input class="publish" value="发布" type="button">
+                    <input class="exit" value="退出" type="button">
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="{% static 'frame_logic.js' %}"></script>
+    <script src="{% static 'blog_publish_api.js' %}"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vditor/3.10.4/index.min.js"></script>
+    <script>
+        // 初始化 Vditor 编辑器
+        const vditor = new Vditor('vditor', {
+            //height: 500,
+            toolbarConfig: {
+                pin: true,
+            },
+            cache: {
+                id: 'vditor',
+            },
+            mode: 'sv', // sv 模式下为分屏模式，可以看到源码和预览
+            preview: {
+                mode: 'both' // 预览模式为左右分屏
+            }
+        });
+    </script>
+    <!--<script src="../static/home_api.js"></script>-->
+</body>
+</html>
