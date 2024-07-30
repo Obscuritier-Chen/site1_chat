@@ -1,7 +1,7 @@
 青涩时期练手用的web项目
 原生js + django
 
-##依赖的项目
+## 依赖的项目
 vditor [](https://markdown.com.cn)
 
 The following software may be included in this product: vditor. A copy of the MIT License is included below:
