@@ -1,0 +1,138 @@
+body
+{
+    margin: 0;
+}
+.container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top
+{
+    position: relative;
+    margin: 0 1px 2px 0;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    box-shadow: 0 0 3px lightgray;
+}
+.logo
+{
+    font-size: 1.3rem;
+}
+.content
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup
+{
+    position: relative;
+    display: flex;
+    top: -30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px 30px 15px;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 6px lightgray;
+}
+.popupTitle
+{
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+.usernameContainer, .passwordContainer
+{
+    margin-bottom: 20px;
+}
+.passwordConfirmContainer
+{
+    margin-bottom: 30px;
+}
+.username, .password, .passwordConfirm
+{
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.wrongInput
+{
+    border: 1px solid red;
+}
+.username, .password, .passwordConfirm, ::placeholder /*最后一项也需要逗号*/
+{
+    text-indent: 2px;
+}
+.submitContainer
+{
+    text-align: center;
+}
+.submitBtn
+{
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+}
+.submitBtn:active
+{
+    box-shadow: 2px 2px lightgray;
+    background-color: darkgray;
+    color: white;
+}
+.tip
+{
+    position: absolute;
+    margin-top: -2px;
+    font-size: 0.8rem;
+    color: red;
+}
+.alertContainer
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);/*虚化*/
+}
+.alert
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: white;
+}
+.alertContent
+{
+    align-self: center;
+    margin: 50px 100px 30px 100px;
+    font-size: 2.4rem;
+}
+.alertConfirm
+{
+    background-color: rgb(7, 128, 231);
+    color: white;
+    width: 50px;
+    height: 40px;
+    border: 4px double white;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 0.97rem;
+    align-self: flex-end;
+}
