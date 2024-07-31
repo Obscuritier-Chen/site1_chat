@@ -19,7 +19,7 @@ whitenoise
       
       python manage.py collectstatic //每次更改静态文件都要进行一次
       daphne -u /tmp/daphne.sock site1.asgi:application //使用Daphne启动ASGI服务器, 由于使用了websocket 无法使用runserver启动服务器
-//应该就好了吧
+应该就好了吧
 
 ## 依赖的项目
 ### vditor 
