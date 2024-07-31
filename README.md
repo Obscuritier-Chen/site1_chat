@@ -1,5 +1,5 @@
 青涩时期练手用的web项目
-原生js + django
+原生js + django + mysql
 
 ## 依赖的项目
 ### vditor 
