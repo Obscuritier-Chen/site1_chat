@@ -1,6 +1,0 @@
-pillow
-djangorestframework
-mysqlclient
-channels
-daphne
-whitenoise
