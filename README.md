@@ -2,12 +2,12 @@
 原生js + django + mysql
 项目没有静态文件服务器 使用whitenoise提供静态文件 
 ## 依赖的库
-pillow
-djangorestframework
-mysqlclient
-channels
-daphne
-whitenoise
+pillow  
+djangorestframework  
+mysqlclient  
+channels  
+daphne  
+whitenoise  
 ## 部署方法
 ### 1.下载库, mysql, 项目
 ### 2.为项目创建mysql database 并配置site1/setting.py
