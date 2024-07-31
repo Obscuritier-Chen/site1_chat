@@ -1,0 +1,62 @@
+.worldContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+.worldTop
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.worldTitle
+{
+    font-size: 1.8rem;
+}
+.enterWorldContainer
+{
+    margin-left: auto;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+.enterWorldButton
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.enterWorldButton:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px rgb(190, 190, 190);
+}
+.enterWorldButton:active
+{
+    background-color: rgb(168, 168, 168);
+}
+.worldContent
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    height: 250px;
+    font-size: 0.9rem;
+}
+.chat
+{
+    display: flex;
+    flex-direction: row;
+}
+.chatUsername
+{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.chatContent
+{
+    flex: 1;
+    word-wrap: break-word;
+    min-width: 0;/*我也不知道为什么这样就好了*/
+}

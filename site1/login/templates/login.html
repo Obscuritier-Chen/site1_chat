@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    {% load static %}
+    <!--<link rel="stylesheet" type="text/css" href="loginStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'loginStyle.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="logo">
+                Chat
+            </div>
+        </div>
+        <div class="content">
+            <div class="popup">
+                <div class="popupTitle">Login</div>
+                <form method="post" action="login/post-login" id="loginPost">
+                    <div class="usernameContainer">
+                        <input type="text" class="username" name="username" placeholder="用户名">
+                    </div>
+                    <div class="passwordContainer">
+                        <input type="password" class="password" name="password" placeholder="密码">
+                    </div>
+                    <div class="submitContainer">
+                        <input type="submit" class="submitBtn" value="登录">
+                    </div>
+                </form>
+                <a href="/signup">signup</a>
+            </div>
+        </div>
+    </div>
+    <!--<script src="{% static 'frame_logic.js' %}"></script>-->
+    <script src="{% static 'login_api.js' %}"></script>
+    <script src="{% static 'login_alert.js' %}"></script>
+    <!--<script src="./login_alert.js"></script>
+    <script src="./login_api.js"></script>-->
+</body>
+</html>
