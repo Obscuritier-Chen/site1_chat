@@ -1,6 +1,6 @@
-青涩时期练手用的web项目
-原生js + django + mysql
-项目没有静态文件服务器 使用whitenoise提供静态文件 
+青涩时期练手用的web项目  
+原生js + django + mysql  
+项目没有静态文件服务器 使用whitenoise提供静态文件   
 ## 依赖的库
 pillow  
 djangorestframework  
